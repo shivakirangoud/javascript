@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>average</title>
+</head>
+<body>
+no1:<input type="text" id="num1">
+no2:<input type="text" id="num2">
+no3:<input type="text" id="num3">
+no4:<input type="text" id="num4">
+<input type="button" onclick="avg()" value="avg">
+<p id="demo"></P>
+</body>
+<script>
+	function avg(){
+     var a=document.getElementById("num1").value;
+     var b=document.getElementById("num2").value;
+     var c=document.getElementById("num3").value;
+     var d=document.getElementById("num4").value;
+     var avg=(Number(a)+Number(b)+Number(c)+Number(d))/4;
+     document.getElementById("demo").innerHTML=avg;
+     if(avg>=90){
+     	document.write("excellent");
+     }
+     else if( avg<90 && avg>=80){
+         document.write("verygood");
+     }
+     else if( avg<80 && avg>=70){
+         document.write("good");
+	}
+	else if( avg<70 && avg>=60){
+         document.write("average");
+     }
+     else if( avg<60 && avg>=1){
+         document.write("fail");
+     }
+ }
+</script>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>email</title>
+</head>
+<body>
+	<form>
+<input type="text" placeholder="email" id="eml">
+<button type="submit" onclick="check()">submit</button>
+<label id="emml" style-"color:red;visibility:hidden">invalid email</label>
+</form>
+</body>
+<script>
+function check(){
+	var a=document.getElementById("eml").value;
+	var b=/^(([a-z A-Z 0-9\._]+)@([a-z A-Z 0-9.]+).([a-z A-Z]{2,8})(.[a-z]{2,8})$,?/);
+	if(b.test(a))
+	{
+      document.getElementById("eml").innerHTML="valid";
+      document.getElementById("eml").visibility="visible";
+      document.getElementById("eml").style.color="green";
+
+	}
+	else
+	{
+	 document.getElementById("eml").innerHTML="Invalid";
+      document.getElementById("eml").visibility="visible";
+      document.getElementById("eml").style.color="red";	
+	}
+}
+</script>
+</html>

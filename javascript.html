@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>add</title>
+</head>
+<body>
+no1:<input type="text" id="num1">
+no2:<input type="text" id="num2">
+<input type="button" onclick="sum()" value="add">
+<input type="button" onclick="sub()" value="sub">
+<input type="button" onclick="mul()" value="mul">
+<input type="button" onclick="div()" value="div">
+<input type="button" onclick="div()" value="mod">
+<p id="demo"></p>
+</body>
+<script>
+	function sum() {
+	  var a=document.getElementById("num1").value;
+      var b=document.getElementById("num2").value;
+	  var sum=Number(a)+Number(b);
+	  document.getElementById("demo").innerHTML =sum;
+	}
+	function sub() {
+	  var a=document.getElementById("num1").value;
+      var b=document.getElementById("num2").value;
+	  var sub=Number(a)-Number(b);
+	  document.getElementById("demo").innerHTML =sub;
+	}
+	function mul() {
+	  var a=document.getElementById("num1").value;
+      var b=document.getElementById("num2").value;
+	  var mul=Number(a)*Number(b);
+	  document.getElementById("demo").innerHTML =mul;
+	}
+	function div() {
+	  var a=document.getElementById("num1").value;
+      var b=document.getElementById("num2").value;
+	  var div=Number(a)/Number(b);
+	  document.getElementById("demo").innerHTML =div;
+	}
+	function mod() {
+	  var a=document.getElementById("num1").value;
+      var b=document.getElementById("num2").value;
+	  var mod=Number(a)%Number(b);
+	  document.getElementById("demo").innerHTML =mod;
+	}
+</script>
+</html>

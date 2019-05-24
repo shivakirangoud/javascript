@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mobile</title>
+</head>
+<body>
+<div>NUMBER:<input type="number" id="num1"></div>
+<input type="button" onclick="fun()" value="submit">
+</body>
+<script>
+	function fun(){
+		var a=document.getElementById("num1").value;
+		var l=a.length;
+		
+		if(l<=10){
+			alert("given number correct")
+		}
+		else{
+			alert("given wrong number")
+		}
+	}
+</script>
+</html>

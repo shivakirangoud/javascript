@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>simplecal</title>
+</head>
+<body>
+     no1:<input type="text" id="num1">
+     no2:<input type="text" id="num2">
+     <input type="button" onclick="sum()"value="+">
+     <input type="button" onclick="sub()"value="-">
+     <input type="button" onclick="mul()"value="*">
+     <input type="button" onclick="div()"value="/">
+     <p id="demo"></p>
+</body>
+<script>
+	function sum() {
+		var a=document.getElementById("num1").value;
+		var b=document.getElementById("num2").value;
+        var sum=Number(a)+Number(b);
+        document.getElementById("demo").innerHTML=sum;
+		// body...
+	}
+	function sub() {
+		var a=document.getElementById("num1").value;
+		var b=document.getElementById("num2").value;
+        var sub=Number(a)-Number(b);
+        document.getElementById("demo").innerHTML=sub;
+		// body...}
+	}
+	function mul() {
+		var a=document.getElementById("num1").value;
+		var b=document.getElementById("num2").value;
+        var mul=Number(a)*Number(b);
+        document.getElementById("demo").innerHTML=mul;
+		// body...
+	}
+	function div() {
+		var a=document.getElementById("num1").value;
+		var b=document.getElementById("num2").value;
+        var div=Number(a)/Number(b);
+        document.getElementById("demo").innerHTML=div;
+		// body...
+	}
+
+</script>
+</html>

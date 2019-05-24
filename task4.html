@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task4</title>
+</head>
+<body>
+	name1:<input type="text" id="nam1">
+<input type="button" onclick="change()" value="change">
+<p id="demo"></p>
+</body>
+<script>
+	function change(){
+		var str=document.getElementById("nam1").value;
+		var res= str.toUpperCase();
+		document.getElementById("demo").innerHTML=res;
+	}
+</script>
+</html>

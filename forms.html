@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>forms</title>
+<body>
+<form>
+<input type="text" placeholder="username" id="name">
+<input type="password" placeholder="password" id="psw">
+<button type="button" onclick="click()">submit</button>
+<label id="abc" style-"color:red; visibility:hidden">invalid username</label>
+</form>
+</body>
+<script> 
+function click(){
+	var a=document.getElementById("name").value;
+	var b=document.getElementById("psw").value;
+	if(a.value==""||b.value==""){
+		alert("please fill the details");
+		return false;
+		document.getElementById("abc").innerHTML="invalid";
+		document.getElementById("abc").visibility="visible";
+		document.getElementById("abc").style.color="green";
+	}
+	else{
+		alert("thanks for filling the details");
+         true;
+         document.getElementById("abc").innerHTML="valid";
+		document.getElementById("abc").visibility="visible";
+		document.getElementById("abc").style.color="red";
+	}
+}
+
+
+
+</script>
+
+
+
+
+
+</form></body></head>

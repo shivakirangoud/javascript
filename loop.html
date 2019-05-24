@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loop</title>
+</head>
+<body>
+ no1:<input type="text" id="num1">
+ no2:<input type="text" id="num2">
+ <input type="button" onclick="great()"value="validate">
+</body><!--
+<script>
+	
+	for(i=1;i<=10;i++){
+		if((i%2)==0){
+          document.write("even");
+		}
+		else{
+			document.write("odd");
+		}
+	document.write(i+"<br/>")
+}
+</script>-->
+<script>
+	function great(){
+		var a=Number(document.getElementById("num1").value);
+		var b=Number(document.getElementById("num2").value);
+		if(a>b){
+			document.write("given number is greater");
+		}
+		else{
+			document.write("not greater");
+		}
+	}
+ </script>
+ <!--
+ <script>
+ 	var a=prompt("entervalue","");
+ 	switch(a){
+ 	case (a>90):
+ 		document.write("excellent");
+ 	break;
+ 	case (a>80):
+ 		document.write("verygood");
+ 	break;
+ 	case (a>70):
+ 		document.write("good");
+ 	break;
+ 	case (a>60):
+ 		document.write("average");
+ 	break;
+ 	case (a>50):
+ 		document.write("below average");
+ 	break;
+ 	default:
+ 	document.write("fail");
+ 	break;
+ 	}
+ </script>
+
+<script>
+	var i=10;
+	while(i<20){
+		document.write(i+"<br/>");
+		i++;
+	}
+</script>
+
+<script>
+	var i=1;
+	do{
+		document.write(i+"<br/>");
+		i++;
+	}
+	while(i<=9)
+</script>
+-->
+</html>

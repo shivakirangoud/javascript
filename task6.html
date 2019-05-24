@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task6</title>
+</head>
+<body>
+   text<input type="text" id="nam1">
+   <input type="button" onclick="nam()" value="ascii">
+   <p id="demo"></p>
+</body>
+<script>
+	function nam() {
+
+	var a=document.getElementById("nam1").value;
+	var res=a.charCodeAt(0);
+	document.getElementById("demo").innerHTML=res;
+}
+</script>
+</html>

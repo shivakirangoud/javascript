@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task3</title>
+</head>
+<body>
+ name:<input type="text" id="name">
+ <input type="button" onclick="check()" value="check">
+ 
+</body>
+<script>
+	function check(){
+		var ch=document.getElementById("name").value;
+		 if(ch >= 'A' && ch <= 'Z'){
+		 	
+		 		document.write("given character is uppercase");
+		 } else 
+		 {
+		 	document.write("given charatcer is lowercase")
+		 }
+		
+	} 
+</script>
+</html>

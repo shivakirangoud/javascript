@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>strings</title>
+</head>
+<body>
+</body>
+<script>
+	var abc="abcdefghijklmnopqrstuvwxyz";
+	var z=abc.length;
+	document.write(z);//26
+	var s=abc.indexOf("lmno");
+	document.write(s);//11
+	var x=abc.slice(3,6);
+	document.write(x);//def 
+	var r=abc.replace("abc","123");
+	document.write(r);//123defghijklmnopqrstuvwxyz
+	var y=abc.toUpperCase();
+	document.write(y);//ABCDEFGHIJKLMNOPQRSTUVWXYZ
+	var t=abc.toLowerCase();
+	document.write(t);//abcdefghijklmnopqrstuvwxyz
+	var p=abc.charAt(2);
+	document.write(p);//c
+	var f=abc.split("",20);
+	document.write(f);//a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t
+	var d=abc.charCodeAt(1);
+	document.write(d);
+</script>
+</html>

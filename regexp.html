@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>regexp</title>
+</head>
+<body>
+<form>
+<input type="text" placeholder="entername" id="abc">
+<button type="submit" onclick="click()">submit</button>
+<label id="abbb" style-"color:red;visibility:hidden">invalid</label>
+</form>
+</body>
+<script>
+function click(){
+var a=document.getElementById("abc");
+var b=/Eoo/i;
+if(b.test(a)){
+	alert("valid");
+}
+else{
+	alert("invalid")
+}
+
+}
+</script>
+</html>
